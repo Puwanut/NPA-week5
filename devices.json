@@ -1,0 +1,129 @@
+[
+    {
+        "hostname": "R1",
+        "device_params": {
+            "device_type": "cisco_ios",
+            "ip": "172.31.106.4",
+            "username": "admin",
+            "password": "cisco"
+        },
+        "interfaces": [
+            {
+                "interface_name": "G0/0",
+                "ip_address": "172.31.106.4",
+                "subnet_mask": "/28",
+                "vrf": "management",
+                "description": "Connect to G0/2 of S0",
+                "status": "up/up"
+            },
+            {
+                "interface_name": "G0/1",
+                "ip_address": "172.31.106.17",
+                "subnet_mask": "/28",
+                "vrf": "control-Data",
+                "description": "Connect to G0/2 of S1",
+                "status": "up/up"
+            },
+            {
+                "interface_name": "G0/2",
+                "ip_address": "172.31.106.34",
+                "subnet_mask": "/28",
+                "vrf": "control-Data",
+                "description": "Connect to G0/1 of R2",
+                "status": "up/up"
+            },
+            {
+                "interface_name": "G0/3",
+                "ip_address": "unassigned",
+                "subnet_mask": "unassigned",
+                "vrf": "unassigned",
+                "description": "Not Use",
+                "status": "admin down"
+            }
+        ]
+    },{
+        "hostname": "R2",
+        "device_params": {
+            "device_type": "cisco_ios",
+            "ip": "172.31.106.5",
+            "username": "admin",
+            "password": "cisco"
+        },
+        "interfaces": [
+            {
+                "interface_name": "G0/0",
+                "ip_address": "172.31.106.5",
+                "subnet_mask": "/28",
+                "vrf": "management",
+                "description": "Connect to G0/3 of S0",
+                "status": "up/up"
+            },
+            {
+                "interface_name": "G0/1",
+                "ip_address": "172.31.106.33",
+                "subnet_mask": "/28",
+                "vrf": "control-Data",
+                "description": "Connect to G0/2 of R1",
+                "status": "up/up"
+            },
+            {
+                "interface_name": "G0/2",
+                "ip_address": "172.31.106.50",
+                "subnet_mask": "/28",
+                "vrf": "control-Data",
+                "description": "Connect to G0/1 of R3",
+                "status": "up/up"
+            },
+            {
+                "interface_name": "G0/3",
+                "ip_address": "unassigned",
+                "subnet_mask": "unassigned",
+                "vrf": "unassigned",
+                "description": "Not Use",
+                "status": "admin down"
+            }
+        ]
+    },{
+        "hostname": "R3",
+        "device_params": {
+            "device_type": "cisco_ios",
+            "ip": "172.31.106.6",
+            "username": "admin",
+            "password": "cisco"
+        },
+        "interfaces": [
+            {
+                "interface_name": "G0/0",
+                "ip_address": "172.31.106.6",
+                "subnet_mask": "/28",
+                "vrf": "management",
+                "description": "Connect to G1/0 of S0",
+                "status": "up/up"
+            },
+            {
+                "interface_name": "G0/1",
+                "ip_address": "172.31.106.49",
+                "subnet_mask": "/28",
+                "vrf": "control-Data",
+                "description": "Connect to G0/2 of R2",
+                "status": "up/up"
+            },
+            {
+                "interface_name": "G0/2",
+                "ip_address": "DHCP",
+                "subnet_mask": "/24",
+                "vrf": "control-Data",
+                "description": "Connect to WAN",
+                "status": "up/up"
+            },
+            {
+                "interface_name": "G0/3",
+                "ip_address": "unassigned",
+                "subnet_mask": "unassigned",
+                "vrf": "unassigned",
+                "description": "Not Use",
+                "status": "admin down"
+            }
+        ]
+    }
+]
