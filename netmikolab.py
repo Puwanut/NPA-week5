@@ -71,7 +71,7 @@ def configure_description(device_params, intf_list):
             local_interface = neighbor[0] 
             connected_device = neighbor[1]
             connected_interface = neighbor[2]
-            if device_params["ip"] == "172.31.106.6" and local_interface == "G0/2":
+            if device_params["ip"] == "172.31.106.6" and intf == "G0/2":
                 desc = "Connect to WAN"
                 break
             elif local_interface == intf:    
