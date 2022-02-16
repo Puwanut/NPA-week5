@@ -2,8 +2,6 @@ from netmiko import ConnectHandler
 import re
 import textfsm
 
-NET_TEXTFSM = "/ntc_templates"
-
 def get_data_from_device(device_params, command):
     with ConnectHandler(**device_params) as ssh:
         result = ssh.send_command(command)
