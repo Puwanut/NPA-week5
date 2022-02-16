@@ -13,7 +13,7 @@ def test_ip():
 def test_subnetmask():
     for device in devices:
         for interface in device["interfaces"]:
-            assert get_subnetmask(device["device_params"], interface["interface_name"], interface["vrf"]) == interface["subnet_mask"]
+            assert get_subnetmask(device["device_params"], interface["interface_name"]) == interface["subnet_mask"]
     print("test subnetmask complete")
 
 def test_description():
